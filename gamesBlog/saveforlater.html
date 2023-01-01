@@ -1,0 +1,83 @@
+<!--Games Blog Website-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Blog - For the Gamers</title> <!--Page title-->
+    <link rel="stylesheet" href="css/style.css"> <!--Executes style.css file-->
+    <script src="javascript/savedItems.js"></script>
+</head>
+<body>
+
+            <!--Page header-->
+    <header id="pageheader" class="page-header">
+
+            <div class="headerMain">
+                
+            Games Blog - All about new Games
+
+            </div>
+                      <!--Navigation panel-->
+                      <nav>
+                        <div class="headerNav">
+                        <a href="index.html">Home</a>
+                        <a href="wallpapers.html">Wallpapers</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="saveforlater.html">Saved Items</a>
+                    </div>
+                        </nav>
+            
+            <!--Search Panel-->
+            <div class="posRight"> 
+              
+              <form id="search-form">
+                <label for="search-input">Search:</label>
+                <input type="text" id="search-input" name="search">
+                <button type="submit">Search</button>
+              </form>              
+
+            </div>
+            <script src="javascript/search.js"></script><!--Executes search.js script file-->           
+            </header>
+
+
+
+
+<br><br>
+            <h1>Saved Items</h1>
+<br><br><br>
+
+<!--Saved items "container"-->
+<div class="item-container">
+
+    <div class="wallp"> <!--For 'border'-->
+
+    <div id="saved-items"><!--Shows saved items here--></div>
+
+
+    </div>
+
+</div>
+
+<!--Executes saved items on page load-->
+  <script>
+    window.onload = function() {
+      displaySavedItems();
+    }
+  </script>
+
+
+    <br><br><br><br><br><br><!--Making some space-->
+    <p class="posRight"><a href = "#pageheader"><img src="https://spaces-cdn.clipsafari.com/tyhbnng5c1xjf22ua8z7o3axz2gj" width="35" height="35" alt="Back to Top"></a></p> <!--Button to hop back to header-->
+    
+    <!--Footer copyright and ad link-->
+    <footer>
+        <div class="footer">
+        Games Blog Website - 2022 <br> <div style="color: red">Ad: <a target="_blank" href="https://hyperiondev.com">Become a Developer</a></div>
+        </div>
+    
+    </footer>
+    </body>
+    </html>

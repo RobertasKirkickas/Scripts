@@ -1,0 +1,154 @@
+body {
+    font-size: 18px;
+    background-color: whitesmoke;
+
+}
+
+/* Main header image, text, colors and adjustments*/
+.headerMain {
+    padding: 60px;
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid black;
+    background: left / cover url(../images/bnr.png); /* (fixed */
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    font: bold calc(1em + 2 * (100vw - 120px) / 100) 'Dancing Script', fantasy;
+    color: #f38831;
+    text-shadow: #000 5px 5px 0.2rem;
+
+  } 
+
+  /* Navigation panel */
+.headerNav {
+    background-color: wheat;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #000808;
+    padding: 3px;
+    width: 305px;
+    height: 20px;
+}
+
+
+/* For page paragraph  */
+.content {
+    text-align: left;
+    color: black;
+    font-family: 'Times New Roman';
+    font-style: italic;
+    font-size: 19px;
+    }
+    
+/* Puts arrow up (back to header) to the right of the screen */
+.posRight {
+text-align: right;
+}
+
+
+/* For website footer */
+.footer {
+    border-style: solid;
+    text-align: center;
+    color: black;
+    background-color: wheat;
+    font-weight: bold;
+    border: 1px solid #000808;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+/* Put text on the side of the paragraph  */
+aside {
+    width: 40%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #eb802a;
+    text-shadow: #000 0.5px 0.5px 0.1rem;
+}
+
+/*  Header 1 settings */
+h1 {
+    text-align: center;
+    font-weight: bold;
+    color: #f38831;
+    text-shadow: #000 1px 1px 0.2rem;
+    font-family: 'Times New Roman';
+    font-style: italic;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    font-size: 45px;
+    }
+
+/*  Header 2 settings */
+    h2 {
+        text-align: center;
+        font-weight: bold;
+        color: green;
+        font-family: 'Times New Roman';
+        font-style: italic;
+        font-size: 35px;
+        }
+
+        /*  Header 3 settings */
+        h3 {
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Times New Roman';
+            font-style: italic;
+            display: table; 
+            padding:2px;
+            font-size:20px;
+            background-color:#f38831;
+            color:black;
+            }
+
+
+            /* Mini topic (header) inside the paragraph */
+            .miniTopic {
+                text-align: center;
+                display: table; 
+                padding:2px;
+                font-size:18px;
+                background-color:#29627e;
+                color:#5ab7e6;
+                font-style: normal;
+                }
+
+
+    /* Flexbox for wallpapers */
+    .wallpapers {
+        display:grid;
+        grid-template-columns: auto auto;
+        }
+        
+          /* Size,position adjustments */
+        .wallp {
+        border: 1px solid black;
+        padding: 0.1vh;
+        margin: 6px;
+        }
+
+        .item-container {
+            display:grid;
+            grid-template-columns: repeat(5, 1fr); /* Set the number of columns to 5 and the width of each column to 1 fraction */
+            grid-gap: 6px; /* Add some space between the images */
+            padding: 0.5vh;
+            margin: 6px;
+          }
+          
+          /* Image resolution adjustments */
+          .item-container img {
+            width: 100%;
+            height: auto;
+          }
+          
