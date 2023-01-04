@@ -1,0 +1,52 @@
+/* Main body */
+body {
+  width: 75%;
+  margin: auto;
+  }
+  /* For header title color and size adjustment */
+
+  h1 {
+    color: rgb(112, 107, 107);
+    font-size: 50px;
+  }
+    /* Grid container with (row of 18) and size */
+.grid-container {
+display: grid;
+grid-template-columns: 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh;
+}
+
+  /* Size,position adjustment */
+.grid-item {
+text-align: center;
+border: 1px solid black;
+padding: 2vh;
+font-size: 2vh;
+margin: 1px;
+
+}
+  /* To hide an element */
+.hdn {
+      visibility: hidden;
+    }
+
+      /* Size adjustment */
+    .size {
+      height: 0px;
+    }
+
+      /* Media resolution and breakpoint adjustments */
+
+                @media (min-width: 120px) and (max-width: 3600px) { 
+                  .div2 {
+                  display: none;
+                }}
+
+                @media (min-width: 2100px) { 
+                  div {
+                  display: none;
+                }
+                @media (min-width: 2100px) { 
+                  .div2 {
+                  display:contents
+                }}
+                }
