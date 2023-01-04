@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Time</title>
+</head>
+<body>
+    <style>
+        .center {
+          text-align: center;
+        }
+      </style>
+      
+      <div class="center">
+        <h1>Current Time:</h1>
+      </div>
+      
+<div class="center">
+
+<h2><p id="time"><!--Shows the current time--> </p></h2>
+
+</div>
+
+<script>
+// Function to get current time 
+setInterval(function() {
+    const d = new Date(); // gets current date and time
+const t = d.toLocaleTimeString(); // gets local time
+time.innerHTML = t // sends to HTML page
+
+}, 1000); // interval 1000ms
+
+</script>
+</body>
+</html>
