@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>Book Catalogue</title>
+
+      </head>
+      <body>
+        
+        <h1>Book Catalogue</h1>
+      
+        <!-- Form to add a new book -->
+        <form id="add-book-form">
+          <label for="author">Author:</label><br>
+          <input type="text" id="author" name="author"><br>
+
+          <label for="title">Title:</label><br>
+          <input type="text" id="title" name="title"><br>
+
+          <label for="genre">Genre:</label><br>
+          <select id="genre" name="genre">
+
+            <option value="fiction">Fiction</option>
+            <option value="non-fiction">Non-Fiction</option>
+            <option value="poetry">Poetry</option>
+          </select><br>
+
+          <label for="reviews">Reviews:</label><br>
+          <textarea id="reviews" name="reviews"></textarea><br>
+          
+          <input type="submit" value="Add Book">
+        </form>
+      
+        <!-- Div to display the list of books -->
+        <div id="book-list">
+        </div>
+      
+        <!-- Edit form -->
+        <form id="edit-form" style="display: none;">
+            <label for="edit-author">Author:</label><br>
+            <input type="text" id="edit-author"><br>
+
+            <label for="edit-title">Title:</label><br>
+            <input type="text" id="edit-title"><br>
+
+            <label for="edit-genre">Genre:</label><br>
+            <input type="text" id="edit-genre"><br>
+
+            <label for="edit-reviews">Reviews:</label><br>
+            <input type="text" id="edit-reviews"><br>
+            
+            <input type="hidden" id="edit-key">
+            <input type="submit" value="Save">
+          </form>
+          
+          <script src="books.js"></script> <!--Executes books.js script file-->
+
+      </body>
+</html>
